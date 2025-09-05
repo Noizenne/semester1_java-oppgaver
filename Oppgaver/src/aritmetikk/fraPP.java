@@ -11,10 +11,10 @@ public class fraPP {
 
         int sum = heltall + (int)desimaltall; // Gjør om desimaltall til heltall
 
-        String ask = showInputDialog("Do you think your sum is bigger than 111.5?");
+        String ask = showInputDialog("Do you think your sum is bigger than 111.5? yes or no");
 
 
-        if (ask != "no" && sum >= 111.5 || ask != "yes" && sum <= 111.5) {
+        if (ask.equals("yes") && sum >= 111.5 || ask.equals("no") && sum <= 111.5) {
             showMessageDialog(null, "Your sum was "+ sum + " so you were right!");
         } else {
             showMessageDialog(null, "Your sum was " + sum +" so you were wrong.");
